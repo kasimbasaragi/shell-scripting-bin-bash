@@ -1,0 +1,21 @@
+#vim count_file&folders.sh --------->[press enter]
+--------------------------------------------------------------------
+#!/bin/bash
+####script for display count files & dir ####
+ 
+echo -e "Enter dir name : \c"
+
+read dir
+
+if [ -d $dir ]
+then 
+	ls -1 $dir | wc -l
+else
+	echo "$dir doesn't exists"
+fi 
+
+[press ESC key---> type :wq!]
+
+#chmod +x count_file&folders.sh
+
+./count_file&folders.sh -------->[to run that script]
